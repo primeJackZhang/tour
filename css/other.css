@@ -1,0 +1,542 @@
+/**
+  	作者：15986682669@163.com
+  	时间：2016-12-08
+  	描述：
+*/
+ 
+ /**
+  * 推荐酒店
+  * */
+#hotel{
+	background: #fff;
+	margin-top: 0.2rem;
+	overflow: auto;
+}
+#hotel h2{
+	font-size: 0.28rem;
+	line-height: 0.45rem;
+	color: #545454;
+	position: relative;
+}
+#hotel h2>.line{
+	width: 0.1rem;
+	height: 0.3rem;
+	display: inline-block;
+	background: #52b769;
+	border-radius: 0.05rem;
+	position: absolute;
+	top: 50%;
+	margin-top: -0.15rem;
+}
+#hotel .row{
+	border-bottom: 1px solid #d1d1d1;
+	margin: 0 0 0.1rem 0;
+	padding-bottom: 0.1rem;
+}
+#hotel .row>div{
+	padding-left: 0;
+	padding-right: 0;
+}
+#hotel .row>div+div{
+	padding-left: 10px;
+}
+#hotel .row img{
+	width: 100%;
+}
+#hotel .row h3{
+	font-size: 0.28rem;
+	color: #333333;
+	margin-top: 0;
+	margin-bottom: 0.1rem;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow:ellipsis;
+}
+#hotel .row .mark>div>i{
+	font-size: 0.12rem!important;
+}
+#hotel .mark{
+	width: 50%;
+	float: left;
+	background: transparent;
+}
+#hotel .mark .star{
+	width: 0.9rem;
+	height: 0.17rem;
+	background: url("../img/stark.png") repeat-x;
+	background-size: 0.18rem 0.17rem;
+	float: left;
+    margin-top: 0.07rem;
+}
+#hotel .mark .star p{
+	width: 0.45rem;
+	height: 0.17rem;
+	background: url("../img/stars.png") repeat-x;
+	background-size: 0.18rem 0.17rem;
+}
+#hotel .mark>span{   
+	width: 0.6rem;   
+	text-indent: 0.05rem;
+	font-size: 0.20rem;
+	color: #c9c320;
+	display: block;
+	float: left;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow:ellipsis;
+}
+#hotel .hotel-info .cost{
+	width: 50%;
+	float: left;
+	font-size: 0.24rem;
+	color: #b6b6b6;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow:ellipsis;
+}
+
+#hotel .hotel-info .cost span{
+	display: inline-block;
+	text-indent: 0.15rem;
+	line-height: 0.36rem;
+	color: #282828;
+	font-size: 0.22rem;
+}
+#hotel .hotel-price{
+	display: block;
+	font-size: 0.22rem;
+	color: #333333;
+	margin-bottom: 0.1rem;
+}
+#hotel .hotel-price>span{
+	font-size: 0.3rem;
+	color: #52b769;
+}
+#hotel .hotel-address{
+	font-size: 0.2rem;
+	color: #333333;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	margin-bottom: 0.1rem;
+}
+#hotel .hotel-address .glyphicon-map-marker{
+	font-size: 0.18rem;
+	color: #d34e4e;
+	padding-right: 0.1rem;
+}
+
+
+
+/**
+ * 景点 css 
+ */
+#header .cover{
+	position: relative;
+}
+#header .cover>img{
+	width: 100%;
+}
+#header .cover .container{
+	position: absolute;
+    top: 1.1rem;
+    left: 2%;
+    width: 96%;
+}
+#header .cover h2{
+	font-size: 0.42rem;
+	color: #fff;
+	text-indent: 0.15rem;
+	margin-top:0;
+}
+#header .cover h2>span{
+	display: block;
+	font-size: 0.28rem;
+	color: #fff;
+	text-indent: 0.2rem;
+}
+#header .cover .container>a{
+	display: block;
+	width:  1.38rem;
+	height: 0.55rem;
+	margin-right: 15px;
+	border-radius: 0.05rem;
+	background: rgba(58,163,88,.5);
+	font-size: 0.28rem;
+	color: #fff;
+	line-height: 0.55rem;
+	text-align: center;
+	position: absolute;
+	right: 0;
+}
+#header .cover .self{
+	top: 0;	 
+}
+#header .cover .team{
+	top: 0.65rem;
+}
+
+.description{
+	background: #fff;
+	margin-top: 0.2rem;
+}
+.description h2{
+	font-size: 0.36rem;
+	color: #676767;
+}
+.description p{
+	text-indent: 2em;
+	font-size: 0.24rem;
+	color: #6b6b6b;
+}
+.description p>a{
+	color: #52b769;
+}
+
+.spot{
+	background: #fff;
+	margin-top: 0.2rem;
+}
+.spot h2{
+	font-size: 0.28rem;
+	line-height: 0.45rem;
+	color: #545454;
+	position: relative;
+}
+.spot h2>.line{
+	width: 0.1rem;
+	height: 0.3rem;
+	display: inline-block;
+	background: #52b769;
+	border-radius: 0.05rem;
+	position: absolute;
+	top: 50%;
+	margin-top: -0.15rem;
+}
+.spot h2>a>i{
+	font-size: 0.4rem;
+	color: #545454;
+	float: right;
+}
+.spot .spot-item{
+	width: 49%;
+	float: left;
+	margin-bottom: 0.2rem;
+	position: relative;
+}
+.spot .spot-item:nth-of-type(2n){
+	margin-left: 2%;
+}
+.spot .spot-item>a{
+	display: block;
+}
+.spot .spot-item>a>img{
+	width: 100%;
+}
+.spot .spot-item>span{
+	position: absolute;
+	left: 0;
+	bottom: 0.1rem;
+	font-size: 0.28rem;
+	color: #fff;
+	line-height: 0.5rem;
+	text-indent: 1em;
+}
+
+
+/**
+ * 我的 css
+ */
+.user{
+	position: relative; 
+}
+.user-bg img{
+	width: 100%;
+	position: relative;
+	z-index: -1;
+}
+.user-login{
+	width: 100%;
+	height: 1.85rem;
+	position: absolute;
+	top: 0.8rem;
+	left: 0;
+}
+.user-login-pic{
+	width: 1.5rem;
+	height: 1.5rem;
+	border-radius: 50%;
+	border: 5px solid #fff;	
+	position: absolute;
+	top: 0.2rem;
+	left: 50%;
+	margin-left: -0.75rem;
+}
+.user-login-pic>a{
+	display: block;
+	width: 100%;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.user-login-pic>a>img{
+	width: 100%;
+}
+.user-login-pic>.icon-plane{
+	width: 0.35rem;
+	height: 0.35rem;
+	border-radius: 50%;
+	background: #52b769;
+	display: block;
+	font-size: 0.24rem;
+	color: #fff;
+	line-height: 0.4rem;
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+.user-login-edit{
+	width: 1.3rem;
+	height: 0.5rem;
+	background: #52b769;
+	border-radius: 0.05rem;
+	color: #fff;
+	font-size: 0.22rem;
+	text-align: center;
+	line-height: 0.5rem;
+	position: absolute;
+	right: 0.6rem;
+	top: 50%;
+	margin-top: -0.25rem;
+}
+.user-info{
+	width: 100%;
+	height: 1.8rem;
+	position: absolute; 
+	top: 2.65rem;
+	left: 0;
+	text-align: center;
+}
+.user-info .user-name{
+	font-size: 0.34rem;
+	color: #fff;
+	margin-top: 0;
+}
+.user-info>span{
+	display: block;
+	font-size: 0.22rem;
+	color: #fff;
+	line-height: 0.6rem;	
+}
+ 
+.fans{
+	background: #fff;
+	margin-top: 0.2rem;
+}
+.fans .row{
+	padding-top: 0.2rem;
+	padding-bottom: 0.2rem;
+}
+.fans a{
+	text-align: center;
+	line-height: 0.25rem;
+	color: #5b5b5b;
+	font-size: 0.22rem;
+}
+.fans a>span{
+	display: block;
+	line-height: 0.25rem;
+}
+.fans a+a{
+	border-left: 1px solid #cccccc;
+}
+
+.order{
+	background: #fff;
+	margin-top: 0.2rem;
+}
+.order h2{
+	font-size: 0.26rem;
+	color: #5b5b5b;
+	text-indent: 1em;
+	line-height: 0.75rem;
+	border-bottom: 1px solid #dddddd;
+	margin: 0 -15px 0;
+}
+.order h2>a{
+	float: right;
+	display: inline-block;
+	padding-right: 15px;
+	font-size: 0.18rem;
+	color: #b4b3b3;
+}
+.order h2>a>i{
+	font-size: 0.24rem;
+	text-indent: 0.5em;
+}
+.order .row{
+	padding-top: 0.2rem;
+	padding-bottom: 0.2rem;
+}
+.order .row>a{
+	text-align: center;
+	line-height: 0.25rem;
+	color: #5b5b5b;
+	font-size: 0.22rem;
+}
+.order .row>a>i{
+	display: block;
+	font-size: 0.32rem;
+	color: #b5b5b5;
+}
+ 
+.info-list{
+	background: #fff;
+	margin-top: 0.2rem;
+}
+.info-list-item{
+	font-size: 0.26rem;
+	color: #5b5b5b;
+	text-indent: 1em;
+	line-height: 0.75rem;
+	border-bottom: 1px solid #dddddd;
+}
+.info-list-item>.icon-angle-right{
+	float: right;
+	padding-right: 15px;
+	font-size: 0.24rem;
+	color: #b4b3b3;
+	line-height: 0.75rem;
+}
+
+
+/**
+ * 发现 
+ */
+.find-navbar{
+	background: #fff;
+	margin-top: 0.2rem;
+}
+.find-navbar>.nav{
+	width: 100%;
+	padding: 0.1rem 0;
+	margin: 0 0;
+}
+.find-navbar>.nav>li{
+	width: 20%;
+	float: left;
+}
+.find-navbar>.nav>li>a{
+	display: block;
+	font-size: 0.24rem;
+	color: #3b3b3b;
+	padding: 0.1rem 0.15rem;
+}
+.find-navbar>.nav>li>a:hover{
+	background: #52b769;
+	color: #fff;
+	border-radius: 0.4rem;
+}
+
+/**
+ * 瀑布流
+ */
+.find-list{
+	margin-top: 0.2rem;
+}
+.find-list .container{
+	width: 100%;
+}
+.find-list .column{
+	width: 49%;
+	float: left;
+}
+.find-list .column:nth-of-type(2n){
+	margin-left: 2%;
+}
+.find-list .find-city{
+	background: #fff;
+	border-radius: 0.05rem;
+	margin-bottom: 0.15rem;
+}
+.find-list .find-city>h3{
+	font-size: 0.24rem;
+	color: #565656;
+	margin: 0;
+	line-height: 0.5rem;
+	padding: 0 0.22rem;
+}
+.find-list .find-city>h3>a{
+	font-size: 0.22rem;
+	color: #acacac;
+	display: inline-block;
+	float: right;
+}
+.find-list-item{
+	border-top-left-radius: 0.05rem;
+	border-top-right-radius: 0.05rem;
+	margin-bottom: 0.15rem;
+}
+.find-list-pic>a{
+	display: block;
+}
+.find-list-pic>a>img{
+	width: 100%;
+	border-top-left-radius: 0.05rem;
+	border-top-right-radius: 0.05rem;
+}
+.find-list-info{
+	padding: 0.1rem 0.1rem 0; 
+	background: #fff;
+}
+.find-list-info>a:nth-of-type(1){
+	display: block;
+	width: 0.75rem;
+	height: 0.75rem;
+	float: left;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.find-list-info>a:nth-of-type(1)>img{
+	width: 100%;
+}
+.find-list-info>a:nth-of-type(2){
+	width: 76%;
+	height:  0.75rem;
+	float: left;
+	font-size: 0.22rem;
+	color: #565656;
+	padding: 0.05rem 0 0 0.2rem;	 
+	overflow: hidden;
+}
+.find-list-info>a:nth-of-type(3){
+	font-size: 0.18rem;
+	color: #b6b6b6;
+	float: left;
+	line-height: 0.36rem;
+}
+.find-list-info>a:nth-of-type(4){
+	font-size: 0.18rem;
+	color: #b6b6b6;
+	float: right;
+	line-height: 0.36rem;
+}
+.find-list-info>a>i{
+	padding-left: 0.05rem;
+	padding-right: 0.05rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

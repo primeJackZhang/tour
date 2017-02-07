@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>旅游app-目的地</title>
+    <link rel="stylesheet" type="text/css" href="../lib/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="../lib/Font-Awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/other.css"/>
+</head>
+<body>
+	<!--header-->
+	<header id="header">
+		<!--topbar-->
+		<div class="topbar">
+			<div class="container">
+				<h1 class="clearfix">目的地<i class="icon-search"></i></h1>
+			</div>
+		</div>
+		<!--/topbar-->
+		<!--destination轮播图-->
+		<section id="banner" class="carousel slide both" data-ride="carousel">  
+ 			 <!-- Indicators -->  
+            <ol class="carousel-indicators">  
+                <li data-target="#banner" data-slide-to="0" class="active"></li>  
+                <li data-target="#banner" data-slide-to="1"></li>  
+                <li data-target="#banner" data-slide-to="2"></li> 
+                <li data-target="#banner" data-slide-to="3"></li>  
+                <li data-target="#banner" data-slide-to="4"></li> 
+            </ol>  
+ 			<!-- Wrapper for slides -->  
+            <div class="carousel-inner" role="listbox">  
+                <div class="item active">  
+                    <a href="javascript:void(0);"><img src="../img/dest_banner01.jpg" alt="..."></a>  
+                    <div class="carousel-caption">
+				        <p>法国美食路线: 吃货们快快来吧！</p>
+				    </div>
+                </div>  
+                <div class="item">  
+                    <a href="javascript:void(1);"><img src="../img/index_banner02.jpg" alt="..."></a>  
+                	<div class="carousel-caption">
+				         <p>印象中国：薄雾中的北海</p>
+				    </div>
+                </div>  
+                <div class="item">  
+                    <a href="javascript:void(2);"><img src="../img/index_banner03.jpg" alt="..."></a>                
+                	<div class="carousel-caption">
+				         <p>印象中国：薄雾中的北海</p>
+				    </div>
+                </div>   
+                <div class="item">  
+                    <a href="javascript:void(3);"><img src="../img/index_banner04.jpg" alt="..."></a>               
+               		<div class="carousel-caption">
+				         <p>印象中国：云贵梯田</p>
+				    </div>
+                </div> 
+                <div class="item">  
+                    <a href="javascript:void(4);"><img src="../img/index_banner05.jpg" alt="..."></a>                
+                	<div class="carousel-caption">
+				         <p>印象中国：万里长城</p>
+				    </div>
+                </div> 
+            </div>  
+            <!-- Controls -->  
+            <a id="carleft" class="left carousel-control" href="#banner" role="button" data-slide="prev">  
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>  
+                <span class="sr-only">Previous</span>  
+            </a>  
+            <a id="carright" class="right carousel-control" href="#banner" role="button" data-slide="next">  
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>  
+                <span class="sr-only">Next</span>  
+            </a>  
+        </section>  
+        <!--/destination轮播图-->
+	</header>
+    <!--header-->
+    <!--#recom-->
+    <section id="hot">
+    	<div class="container-fluid">
+    		<h2 class="clearfix"><span class="line"></span>&nbsp;&nbsp;&nbsp;当地热门
+    			<a href="javascript:;"><i class="icon-angle-right"></i></a></h2>
+    		<div class="row">
+    			<div class="col-xs-4 recom-item">
+    				<a href="scenery.html"><img src="../img/dest_hot01.jpg" alt="" /><h3>巴黎</h3><p><span>102415</span>人去过</p></a>
+    			</div>
+    			<div class="col-xs-4 recom-item">
+    				<a href="javascript:void(3);"><img src="../img/dest_hot02.jpg" alt="" /><h3>里昂</h3><p><span>102415</span>人去过</p></a>
+    			</div>
+    			<div class="col-xs-4 recom-item">
+    				<a href="javascript:void(3);"><img src="../img/dest_hot03.jpg" alt="" /><h3>威尼斯</h3><p><span>102415</span>人去过</p></a>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+	<!--/#recom-->
+    <!--#destination-->
+    <section id="hotel">
+    	<div class="container-fluid">
+    		<h2><span class="line"></span>&nbsp;&nbsp;&nbsp;酒店推荐</h2>
+    		<div class="row">
+    			<div class="col-xs-6 hotel-img">
+    				<a href="javascript:void(0);"><img src="../img/dest-hotel02.jpg"/></a>
+    			</div>
+    			<div class="col-xs-6 hotel-info">
+    				<h3>赫蒙酒店（5星级）</h3>
+    				<div class="mark clearfix">
+    					<div class="star">
+    						<p tip="4.5"></p>
+    					</div>
+    					<span>4.5分</span>
+    				</div>
+    				<div class="cost">|<span>34233人消费</span></div>
+    				<div style="clear: both;"></div>
+    				<p class="hotel-price ">￥<span>1063.9</span>起</p>
+    				<p class="hotel-address"><i class="glyphicon glyphicon-map-marker"></i>55 rue Monge, 75005 Paris, France</p>
+    			    
+    			</div>
+    		</div>
+    		<div class="row">
+    			<div class="col-xs-6 hotel-img">
+    				<a href="javascript:void(0);"><img src="../img/dest-hotel01.jpg"/></a>
+    			</div>
+    			<div class="col-xs-6 hotel-info">
+    				<h3>马克西姆居所酒店</h3>
+    				<div class="mark clearfix">
+    					<div class="star">
+    						<p tip="4.5"></p>
+    					</div>
+    					<span>4.3分</span>
+    				</div>
+    				<div class="cost">|<span>34233人消费</span></div>
+    				<div style="clear: both;"></div>
+    				<p class="hotel-price ">￥<span>1063.9</span>起</p>
+    				<p class="hotel-address"><i class="glyphicon glyphicon-map-marker"></i>55 rue Monge, 75005 Paris, France</p>
+    			    
+    			</div>
+    		</div>
+    		<div class="row">
+    			<div class="col-xs-6 hotel-img">
+    				<a href="javascript:void(0);"><img src="../img/dest-hotel02.jpg"/></a>
+    			</div>
+    			<div class="col-xs-6 hotel-info">
+    				<h3>赫蒙酒店（5星级）</h3>
+    				<div class="mark clearfix">
+    					<div class="star">
+    						<p tip="4.5"></p>
+    					</div>
+    					<span>4.5分</span>
+    				</div>
+    				<div class="cost">|<span>34233人消费</span></div>
+    				<div style="clear: both;"></div>
+    				<p class="hotel-price ">￥<span>1063.9</span>起</p>
+    				<p class="hotel-address"><i class="glyphicon glyphicon-map-marker"></i>55 rue Monge, 75005 Paris, France</p>
+    			    
+    			</div>
+    		</div>
+    	</div>
+    </section>
+    <!--/#destination-->
+	<!--footer-->
+    <footer id="footer">
+    	<nav class="navbar navbar-default" role="navigation">
+		    <div class="container-fluid">
+		    	<div class="navbar-collapse">
+			        <ul class="nav navbar-nav clearfix">
+				        <li><a href="../index.html"><i class="icon-home"></i><span>主页</span></a></li>
+				        <li><a href="destination.html"><i class="icon-globe"></i><span>目的地</span></a></li>
+				        <li><a href="find.html"><i class="icon-eye-open"></i><span>发现</span></a></li>
+				        <li><a href="myself.html"><i class="icon-user"></i><span>我</span></a></li>
+			        </ul>
+		        </div>
+		    </div>
+		</nav>
+    </footer>
+    <!--/footer-->
+	<!--script-->
+	<script src="../js/base.js" ></script>
+	<script src="../lib/jquery/jquery-1.9.1.min.js"></script>
+	<script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+	<script src="../js/toucher.js"></script>
+	<script src="../js/index.js"></script>
+</body>
+</html>
+
+
+
